@@ -1,0 +1,50 @@
+For the given JSON iterate over all for loops(for,for in,for of,forEach)?
+
+To iterate over the elements in a JSON using different types of loops, we need to parse the JSON into a JavaScript object first.
+Then we can use various looping mechanisms. However, please note that JSON is a data format, and by "iterate over JSON,"
+I assume you mean iterating over the JavaScript object obtained from parsing the JSON. Here's an example:
+
+javascript
+const json = '{"name": "John", "age": 30, "city": "New York"}';
+const obj = JSON.parse(json);
+
+// Using 'for' loop
+console.log("Using 'for' loop:");
+for (let key in obj) {
+  console.log(key + ": " + obj[key]);
+}
+
+// Using 'for...in' loop
+console.log("\nUsing 'for...in' loop:");
+for (let key in obj) {
+  if (obj.hasOwnProperty(key)) {
+    console.log(key + ": " + obj[key]);
+  }
+}
+
+// Using 'for...of' loop
+console.log("\nUsing 'for...of' loop:");
+const values = Object.values(obj);
+for (let value of values) {
+  console.log(value);
+}
+
+// Using 'forEach' loop
+console.log("\nUsing 'forEach' loop:");
+Object.entries(obj).forEach(([key, value]) => {
+  console.log(key + ": " + value);
+});
+
+In the above example, we parse the JSON string into a JavaScript object (`obj`). Then we demonstrate four different types of loops:
+
+1. `for` loop: This loop iterates over the keys of the object using the `for...in` syntax. It logs each key-value pair.
+
+2. `for...in` loop: Similar to the `for` loop, it iterates over the keys of the object. However, we use `obj.hasOwnProperty(key)`
+to ensure we only iterate over the object's own properties.
+
+3. `for...of` loop: This loop iterates over the values of the object using `Object.values(obj)`. It logs each value.
+
+4. `forEach` loop: We use `Object.entries(obj)` to convert the object into an array of key-value pairs. Then we use the `forEach`
+method to iterate over each entry and log the key-value pair.
+
+----------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,44 @@
+create your own resume data in JSON fornat?
+
+json
+{
+  "name": "Nithish Kumar",
+  "title": "Full Stack Web Developer",
+  "summary": "Experienced Web Developed passionate about building scalable and efficient applications.",
+  "contact": {
+    "email": "officialnithish13@gmail.com",
+    "phone": "+91-9360716755",
+    "location": "Chennai , IN"
+  },
+}
+  "education": [
+    {
+      "degree": "Bachlore in Technology Electrical and Electronics",
+      "university": "Dr.M.G.R.university, Maduravoyal",
+      "year": 2024
+    }
+  ],
+{
+  "skills": [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Java",
+    "Python",
+    "React",
+    "Node.js",
+    "SQL",
+    "Git"
+  ],
+  "languages": [
+    "English (Fluent)",
+  ],
+"interests": [
+    "Open-source projects",
+    "Problem-solving",
+    "Reading",
+    "Fitness"
+  ]
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
